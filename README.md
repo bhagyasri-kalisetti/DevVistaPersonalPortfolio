@@ -11,6 +11,11 @@ A responsive portfolio website with 3 professional templates. Built as part of D
 - **Modern UI/UX**: Clean design with smooth animations
 - **AWS Deployed**: Hosted on Amazon S3 for fast and reliable access
 - **Easy Customization**: Pure HTML, CSS, and JavaScript
+- ## Run Locally
+Just open index.html in your browser — no server needed for the frontend.
+
+For auth to work locally, update the API_URL in login.html:
+const API_URL = 'YOUR_API_GATEWAY_URL';
 
 ## 🛠️ Tech Stack
 - **Frontend**: HTML5, CSS3, JavaScript
