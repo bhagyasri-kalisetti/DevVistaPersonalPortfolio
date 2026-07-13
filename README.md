@@ -16,7 +16,24 @@ A responsive portfolio website with 3 professional templates. Built as part of D
 - **Frontend**: HTML5, CSS3, JavaScript
 - **Hosting**: AWS S3 Static Website Hosting
 - **Design**: Responsive Web Design, Mobile-First Approach
-
+## Project Structure
+devvista/
+├── index.html          # Main landing page
+├── login.html          # Signup / Login page
+├── script.js           # Wizard logic + template generation
+├── style.css           # All styling
+├── logo.jpg            # Brand logo
+├── t1_thumb.png        # Nexus template preview
+├── t2_thumb.png        # Forge template preview
+├── t3_thumb.png        # Prism template preview
+├── t1/index.html       # Nexus template
+├── t2/index.html       # Forge template
+├── t3/index.html       # Prism template
+└── lambda/
+    ├── index.mjs       # Lambda function (auth logic)
+    ├── package.json
+    └── node_modules/
+        └── bcryptjs/
 
 
 ## 🚀 Deployment
