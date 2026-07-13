@@ -18,16 +18,27 @@ A responsive portfolio website with 3 professional templates. Built as part of D
 - **Design**: Responsive Web Design, Mobile-First Approach
 ## How its Work
 User visits site (S3)
+
        ↓
+       
 Fills signup / login form
+
        ↓
+       
 fetch() → API Gateway
+
        ↓
+       
 Lambda (Node.js) processes request
+
        ↓
+       
 DynamoDB stores / verifies user
+
        ↓
+       
 Session saved → Wizard opens
+
        ↓
 User builds and downloads portfolio
 ## 🚀 Deployment
