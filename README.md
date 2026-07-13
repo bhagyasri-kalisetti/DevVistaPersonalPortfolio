@@ -16,36 +16,20 @@ A responsive portfolio website with 3 professional templates. Built as part of D
 - **Frontend**: HTML5, CSS3, JavaScript
 - **Hosting**: AWS S3 Static Website Hosting
 - **Design**: Responsive Web Design, Mobile-First Approach
-## Project Structure
-DevVista/
-│
-├── index.html                 # Landing page
-├── login.html                 # Signup / Login page
-├── script.js                  # Wizard logic + template generation
-├── style.css                  # Global styling
-├── logo.jpg                   # Brand logo
-│
-├── assets/                    # Template preview images
-│   ├── t1_thumb.png           # Nexus template preview
-│   ├── t2_thumb.png           # Forge template preview
-│   └── t3_thumb.png           # Prism template preview
-│
-├── templates/                 # Portfolio Templates
-│   ├── nexus/
-│   │   └── index.html         # Template 1: Nexus
-│   ├── forge/
-│   │   └── index.html         # Template 2: Forge
-│   └── prism/
-│       └── index.html         # Template 3: Prism
-│
-└── backend/                   # AWS Lambda Functions
-    ├── auth/
-    │   ├── index.mjs          # Lambda function - Auth logic
-    │   └── package.json       # Dependencies
-    └── node_modules/
-        └── bcryptjs/
-
-
+## How its Work
+User visits site (S3)
+       ↓
+Fills signup / login form
+       ↓
+fetch() → API Gateway
+       ↓
+Lambda (Node.js) processes request
+       ↓
+DynamoDB stores / verifies user
+       ↓
+Session saved → Wizard opens
+       ↓
+User builds and downloads portfolio
 ## 🚀 Deployment
 This project is deployed on AWS S3:
 1. Built static HTML/CSS/JS files
