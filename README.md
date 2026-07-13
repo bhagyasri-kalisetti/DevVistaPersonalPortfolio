@@ -17,21 +17,31 @@ A responsive portfolio website with 3 professional templates. Built as part of D
 - **Hosting**: AWS S3 Static Website Hosting
 - **Design**: Responsive Web Design, Mobile-First Approach
 ## Project Structure
-devvista/
-├── index.html          # Main landing page
-├── login.html          # Signup / Login page
-├── script.js           # Wizard logic + template generation
-├── style.css           # All styling
-├── logo.jpg            # Brand logo
-├── t1_thumb.png        # Nexus template preview
-├── t2_thumb.png        # Forge template preview
-├── t3_thumb.png        # Prism template preview
-├── t1/index.html       # Nexus template
-├── t2/index.html       # Forge template
-├── t3/index.html       # Prism template
-└── lambda/
-    ├── index.mjs       # Lambda function (auth logic)
-    ├── package.json
+DevVista/
+│
+├── index.html                 # Landing page
+├── login.html                 # Signup / Login page
+├── script.js                  # Wizard logic + template generation
+├── style.css                  # Global styling
+├── logo.jpg                   # Brand logo
+│
+├── assets/                    # Template preview images
+│   ├── t1_thumb.png           # Nexus template preview
+│   ├── t2_thumb.png           # Forge template preview
+│   └── t3_thumb.png           # Prism template preview
+│
+├── templates/                 # Portfolio Templates
+│   ├── nexus/
+│   │   └── index.html         # Template 1: Nexus
+│   ├── forge/
+│   │   └── index.html         # Template 2: Forge
+│   └── prism/
+│       └── index.html         # Template 3: Prism
+│
+└── backend/                   # AWS Lambda Functions
+    ├── auth/
+    │   ├── index.mjs          # Lambda function - Auth logic
+    │   └── package.json       # Dependencies
     └── node_modules/
         └── bcryptjs/
 
