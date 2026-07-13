@@ -66,4 +66,4 @@ This project is deployed on AWS S3:
 - Integrate with backend for dynamic content
 
 ---
-Made with ❤️ as part of DevVista Project
+Made with ❤️ as part of DevVistaPersonalPortfolio Project
